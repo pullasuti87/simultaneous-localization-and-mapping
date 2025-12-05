@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 video = cv2.VideoCapture('./sample.mp4')
 #  orb (oriented fast and rotated brief) -> finds corners and texture details
-orb = cv2.ORB_create(nfeatures=1000) 
+orb = cv2.ORB_create(nfeatures=5000) 
 
 def make_frames():
     while True:

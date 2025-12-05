@@ -1,14 +1,15 @@
 # SLAM -> Simultaneous Localization and Mapping
 
 ## NEEDS
-install GUI features to see video or image
-- sudo apt update
+GUI features to see video or image
 - sudo apt install -y libgl1 libglib2.0-0
 
 ## TODO
-- feature extraction -> identifies points in the image that are trackable 
-- switch form containers to local
+- feature extraction -> identify points in the image that are trackable  -- WORKS!
+- feature matching -> try to find same points from previous frame to next frame 
+- switch form containers to local --> ??????
 
 ### NOTES
 - cv2 (opencv) is computer vision library, contains over 2500 algorithms 
 - using flask is silly...
+- check out  NORM_HAMMING method!!
