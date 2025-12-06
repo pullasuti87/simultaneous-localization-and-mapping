@@ -10,11 +10,9 @@ orb = cv2.ORB_create(nfeatures=5000)
 def make_frames():
     while True:
         ret, frame = video.read()
-        if not ret:
-            break
 
         # getting features 
-        points, fingerprint= orb.detectAndCompute(frame, None)
+        points, id= orb.detectAndCompute(frame, None)
         frame = cv2.drawKeypoints(frame, points, None, color=(0,255,0), flags=0)
 
         # encode frame into jpg 
@@ -31,3 +29,6 @@ def feed():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+
+    
