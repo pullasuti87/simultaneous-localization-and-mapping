@@ -6,8 +6,7 @@ GUI features to see video or image
 
 ## TODO
 - feature extraction -> identify points in the image that are trackable  -- WORKS!
-- feature matching -> try to find same points from previous frame to next frame 
-- switch form containers to local --> ??????
+- feature matching -> try to find same points from previous frame to next frame --WORKS! 
 
 ### NOTES
 - cv2 (opencv) is computer vision library, contains over 2500 algorithms 
