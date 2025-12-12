@@ -2,6 +2,7 @@
 
 ## NEEDS
 GUI features to see video or image
+- sudo apt update -> this is needed when in container
 - sudo apt install -y libgl1 libglib2.0-0
 
 ## TODO

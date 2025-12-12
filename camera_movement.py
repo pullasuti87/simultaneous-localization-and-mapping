@@ -6,6 +6,8 @@ SCALE = 50.0
 OFFSET = (300, 500)
 
 video = cv2.VideoCapture("sample.mp4")
+orb = cv2.ORB_create(nfeatures=1000)
+bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
 
 # draw path on canvas, trajectory Visualization 
 def draw(img, v): # v -> vector (x, y, z)
@@ -25,6 +27,17 @@ def draw(img, v): # v -> vector (x, y, z)
 
     cv2.putText(traj, 'SLAM', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
     return traj
+
+# frame dimensions from camera matrix
+w = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+h = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
+# need placeholder 
+
+
+
+
+
 
 # while True:
 #     ret, frame = video.read()
