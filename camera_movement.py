@@ -25,12 +25,11 @@ def draw(img, v): # v -> vector (x, y, z)
     # draw line
     cv2.line(traj, OFFSET, (x, z), (255, 0, 0), 1)
 
-    cv2.putText(traj, 'SLAM', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
     return traj
 
 # frame dimensions from camera matrix
-w = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
-h = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+#w = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+#h = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # need placeholder 
 
@@ -65,11 +64,8 @@ while True:
 
     # blank canvas
     t = draw(None, m)
-
     cv2.imshow('', t)
-
     i += 1
-
     if cv2.waitKey(30) & 0xFF == ord('q'):
         break
 
