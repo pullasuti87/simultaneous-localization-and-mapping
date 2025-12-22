@@ -34,19 +34,19 @@ def draw(img, v):  # v -> vector (x, y, z)
 w = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
 h = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-# default value given by ai 
+# based by width
 focal = 1.0 * w
 print(focal)
 cp = (w / 2, h / 2)  # center point
 print(cp)
-# matrix for camera placeholder
-ph = numpy.array([
+# matrix for 3D coordinates to 2D pixels
+K = numpy.array([
     [focal, 0, cp[0]],
     [0, focal, cp[1]],
     [0, 0, 1]
 ], dtype=numpy.float32)
 
-print(ph)
+print(K)
 
 # while True:
 #     ret, frame = video.read()
