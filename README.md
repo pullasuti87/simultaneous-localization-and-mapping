@@ -15,3 +15,18 @@ GUI features to see video or image
   https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
 - using flask is silly...
 - check out  NORM_HAMMING method!!
+
+
+### stuff 
+enable ssh on windows
+ ```powershell
+ Get-Service ssh-agent | Set-Service -StartupType Automatic
+ Start-Service ssh-agent
+ Get-Service ssh-agent
+ ```
+add key to windows
+ ```powershell
+ # replace 'xxx' with key name 
+ ssh-add $env:USERPROFILE\.ssh\xxx
+ ```
+restart vscode
