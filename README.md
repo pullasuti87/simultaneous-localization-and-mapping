@@ -11,6 +11,7 @@ GUI features to see video or image
 - camera_movement -> ...
 
 ### NOTES
-- cv2 (opencv) is computer vision library, contains over 2500 algorithms 
+- cv2 (opencv) is computer vision library, contains over 2500 algorithms
+  https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
 - using flask is silly...
 - check out  NORM_HAMMING method!!
