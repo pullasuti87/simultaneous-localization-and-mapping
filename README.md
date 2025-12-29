@@ -25,8 +25,7 @@ enable ssh on windows
  Get-Service ssh-agent
  ```
 add key to windows
- ```powershell
- # replace 'xxx' with key name 
- ssh-add $env:USERPROFILE\.ssh\xxx
+ ```powershell 
+ ssh-add $env:USERPROFILE\.ssh\file_name
  ```
 restart vscode
