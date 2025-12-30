@@ -47,5 +47,6 @@ coverage/
 # vim session
 .vim
 
-# notes
+# other
 .notes.txt
+.steps.md
