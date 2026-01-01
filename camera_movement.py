@@ -79,11 +79,11 @@ while True:
     fr2 = [] # next pooints
 
     for i in t:
-        fr1.append(point1[i.queryIdx].pt)
+        fr1.append(point1[i.queryIdx].pt) # index of point1, .pt is x, y of point1
     pts1 = numpy.float32(fr1).reshape(-1, 1, 2)
 
     for j in t:
-        fr2.append(point2[j.trainIdx].pt)
+        fr2.append(point2[j.trainIdx].pt) # index of point2
     pts2 = numpy.float32(fr2).reshape(-1, 1, 2)
 
     print(pts1)
