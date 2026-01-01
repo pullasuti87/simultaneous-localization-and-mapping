@@ -15,7 +15,7 @@
 	"updateContentCommand": "sudo apt-get update && sudo apt-get install -y libgl1 libglib2.0-0",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && echo 'source .venv/bin/activate' >> ~/.bashrc",
+    "postCreateCommand": "pip install -r requirements.txt"
 	
 	// Configure tool-specific properties.
 	// "customizations": {}
